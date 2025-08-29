@@ -4,81 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jignesh Bhadra | Senior Data Engineer</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; scroll-behavior:smooth; color:#333; }
-    nav { background:#0a5ea8; padding:1em; position:fixed; width:100%; top:0; z-index:1000; }
-    nav a { margin:0 1em; text-decoration:none; color:#fff; font-weight:bold; }
-    section { padding:80px 20px; max-width:900px; margin:0 auto; }
-    .hero { text-align:center; padding:150px 20px; background:#e0e7ff; }
-    .hero h1 { font-size:2.5em; margin:0; color:#0a5ea8; }
-    .hero p { font-size:1.2em; }
-    h2 { color:#0a5ea8; margin-bottom:10px; }
-    .progress-bar { background:#ddd; border-radius:4px; margin:8px 0; }
-    .progress { background:#0a5ea8; height:10px; border-radius:4px; }
-    footer { text-align:center; padding:20px; background:#f1f1f1; margin-top:40px; }
-    ul { padding-left:20px; }
-    .btn { display:inline-block; margin-top:10px; padding:10px 20px; background:#0a5ea8; color:#fff; border-radius:5px; text-decoration:none; }
-    .btn:hover { background:#084c88; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b63c2f0e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Jignesh Bhadra</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <h1>Hi, I'm Jignesh Bhadra 👋</h1>
-    <p>Senior Data Engineer | GCP Certified | 8.5+ Years Experience</p>
-    <a href="#about" class="btn">Know More ↓</a>
+    <div class="hero-text">
+      <h1>Hi 👋, I'm <span>Jignesh</span></h1>
+      <h2>Senior Data Engineer</h2>
+      <p>A Passionate Data Engineer from India 🇮🇳</p>
+      <a href="#contact" class="btn">Contact <i class="fas fa-paper-plane"></i></a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Jignesh Bhadra">
+    </div>
   </section>
 
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Experienced and result-oriented Data Engineer with 8.5+ years of IT experience, 
-      including 4+ years in Google Cloud Platform. Skilled in building scalable data pipelines 
-      using Airflow, BigQuery, Python, and Dataproc. Passionate about automation, clean code, 
-      and delivering production-ready solutions.
+      Experienced Data Engineer with 8.5+ years of IT experience, including 4+ years in Google Cloud Platform. 
+      Skilled in BigQuery, Airflow, Python, PySpark, and GCP-native tools for data engineering. 
+      Passionate about automation, clean coding, and scalable pipelines.
     </p>
-    <a href="Jignesh_Bhadra_GCP_DataEngineer.pdf" class="btn" target="_blank">Download Resume</a>
+    <a href="Jignesh_Bhadra_GCP_DataEngineer.pdf" target="_blank" class="btn">Download Resume</a>
   </section>
 
   <!-- Skills -->
   <section id="skills">
-    <h2>Core Skills</h2>
-    <p>Python</p><div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
-    <p>SQL</p><div class="progress-bar"><div class="progress" style="width:80%;"></div></div>
-    <p>BigQuery</p><div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
-    <p>Airflow</p><div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
-    <p>PySpark</p><div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
-    <p>GCP Tools (GCS, Dataproc, Composer, Cloud Build)</p><div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+      <div class="skill">BigQuery</div>
+      <div class="skill">Airflow</div>
+      <div class="skill">PySpark</div>
+      <div class="skill">GCP (Dataproc, GCS, Composer, Cloud Build)</div>
+    </div>
   </section>
 
   <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
     <ul>
-      <li><b>LTIMindtree</b> — Senior Data Engineer (Jan 2025 – Present)</li>
-      <li><b>Tata Consultancy Services</b> — Senior Data Engineer (May 2023 – Jan 2025)</li>
-      <li><b>Teamware Solutions (TCS)</b> — Data Engineer (Mar 2022 – Apr 2023)</li>
-      <li><b>Vedang Cellular Services</b> — Test Engineer (Sep 2021 – Mar 2022)</li>
-      <li><b>Linkquest</b> — Test Engineer (Jun 2017 – Jul 2021)</li>
-      <li><b>Kutumbh Care Pvt Ltd</b> — Test Engineer (Feb 2015 – Apr 2016)</li>
+      <li><b>LTIMindtree</b> — Senior Data Engineer (2025 – Present)</li>
+      <li><b>TCS</b> — Senior Data Engineer (2023 – 2025)</li>
+      <li><b>Teamware Solutions</b> — Data Engineer (2022 – 2023)</li>
+      <li><b>Vedang Cellular</b> — Test Engineer (2021 – 2022)</li>
+      <li><b>Linkquest</b> — Test Engineer (2017 – 2021)</li>
     </ul>
   </section>
 
   <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-    <p>Explore my work on <a href="https://github.com/yourusername?tab=repositories" target="_blank">GitHub</a>.</p>
+    <p>Explore my repositories on <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
   </section>
 
   <!-- Contact -->
@@ -87,15 +88,18 @@
     <p>Email: <a href="mailto:jigneshbhadra007@gmail.com">jigneshbhadra007@gmail.com</a></p>
     <p>Phone: +91-9653499307</p>
     <p>Location: Navi Mumbai, India</p>
-    <p>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/jigneshbhadra007" target="_blank">LinkedIn</a>
-    </p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/jigneshbhadra007" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919653499307" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
   <footer>
     © 2025 Jignesh Bhadra | Senior Data Engineer
   </footer>
+
 </body>
 </html>
